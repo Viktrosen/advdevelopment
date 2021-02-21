@@ -1,4 +1,4 @@
-package geekbrains.ru.translator.rx
+package com.example.advdevelopment.rx
 
 import io.reactivex.Scheduler
 
