@@ -2,6 +2,8 @@ package com.example.advdevelopment.model.datasource
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.example.advdevelopment.model.data.DataModel
+import com.example.advdevelopment.model.data.api.ApiService
+import com.example.advdevelopment.model.data.api.BaseInterceptor
 import io.reactivex.Observable
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
