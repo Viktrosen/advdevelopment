@@ -1,6 +1,5 @@
 package com.example.advdevelopment.model.data
 
-
 sealed class AppState {
 
     data class Success(val data: List<DataModel>?) : AppState()
