@@ -1,12 +1,21 @@
 package com.example.advdevelopment.model.datasource
 
+import com.example.advdevelopment.model.data.AppState
 import com.example.advdevelopment.model.data.DataModel
-import com.example.advdevelopment.model.datasource.DataSource
-import io.reactivex.Observable
+import com.example.advdevelopment.room.HistoryDao
+import com.example.advdevelopment.utils.convertDataModelSuccessToEntity
+import com.example.advdevelopment.utils.mapHistoryEntityToSearchResult
 
-class RoomDataBaseImplementation : DataSource<List<DataModel>> {
+class RoomDataBaseImplementation(private val historyDao: HistoryDao) :
+        DataSourceLocal<List<DataModel>> {
 
-    override fun getData(word: String): Observable<List<DataModel>> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override suspend fun getData(word: String): List<DataModel> {
+        return mapHistoryEntityToSearchResult(historyDao.all())
+    }
+
+    override suspend fun saveToDB(appState: AppState) {
+        convertDataModelSuccessToEntity(appState)?.let {
+            historyDao.insert(it)
+        }
     }
 }

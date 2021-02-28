@@ -1,10 +1,8 @@
 package com.example.advdevelopment.model.datasource
 
-import com.example.advdevelopment.model.data.DataModel
-import io.reactivex.Observable
+import com.example.advdevelopment.model.data.AppState
 
-class DataSourceLocal(private val remoteProvider: RoomDataBaseImplementation = RoomDataBaseImplementation()) :
-    DataSource<List<DataModel>> {
+interface DataSourceLocal<T> : DataSource<T> {
 
-    override fun getData(word: String): Observable<List<DataModel>> = remoteProvider.getData(word)
+    suspend fun saveToDB(appState: AppState)
 }
