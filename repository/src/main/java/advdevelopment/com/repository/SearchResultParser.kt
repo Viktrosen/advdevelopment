@@ -2,7 +2,7 @@ package advdevelopment.com.repository
 
 import advdevelopment.com.model.data.AppState
 import advdevelopment.com.model.data.DataModel
-import advdevelopment.com.repository.room.HistoryEntity
+import advdevelopment.com.model.room.HistoryEntity
 
 fun mapHistoryEntityToSearchResult(list: List<HistoryEntity>): List<DataModel> {
     val searchResult = ArrayList<DataModel>()

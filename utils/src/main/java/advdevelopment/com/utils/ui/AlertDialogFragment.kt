@@ -3,8 +3,6 @@ package advdevelopment.com.utils.ui
 import android.app.Dialog
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDialogFragment
-import advdevelopment.com.utils.ui.getAlertDialog
-import advdevelopment.com.utils.ui.getStubAlertDialog
 
 class AlertDialogFragment : AppCompatDialogFragment() {
 

@@ -9,8 +9,8 @@ object Config {
 }
 
 object Releases {
-    const val version_code = 1
-    const val version_name = "1.0"
+    const val version_code = 2
+    const val version_name = "2.0"
 }
 
 object Modules {
@@ -59,12 +59,14 @@ object Versions {
     const val runtime = "2.2.0-alpha01"
     const val roomCompiler = "2.2.0-alpha01"
 
+    //Google Play
+    const val googlePlayCore = "1.6.3"
+
     //Test
     const val jUnit = "4.12"
     const val runner = "1.2.0"
     const val espressoCore = "3.2.0"
 }
-
 
 object Tools {
     const val multidex = "com.android.support:multidex:${Versions.multidex}"
@@ -114,4 +116,8 @@ object TestImpl {
     const val junit = "junit:junit:${Versions.jUnit}"
     const val runner = "androidx.test:runner:${Versions.runner}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
+}
+
+object GooglePlay {
+    const val googlePlayCore = "com.google.android.play:core:${Versions.googlePlayCore}"
 }

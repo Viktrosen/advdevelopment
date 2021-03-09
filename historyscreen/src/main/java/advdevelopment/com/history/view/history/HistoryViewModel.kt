@@ -1,6 +1,5 @@
 package advdevelopment.com.history.view.history
 
-import advdevelopment.com.history.view.history.HistoryInteractor
 import androidx.lifecycle.LiveData
 import advdevelopment.com.core.viewmodel.BaseViewModel
 import advdevelopment.com.history.parseLocalSearchResults

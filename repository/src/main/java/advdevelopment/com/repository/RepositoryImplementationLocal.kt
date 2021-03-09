@@ -2,7 +2,6 @@ package advdevelopment.com.repository
 
 import advdevelopment.com.model.data.AppState
 import advdevelopment.com.model.data.DataModel
-import advdevelopment.com.repository.RepositoryLocal
 
 class RepositoryImplementationLocal(private val dataSource: DataSourceLocal<List<DataModel>>) :
     RepositoryLocal<List<DataModel>> {

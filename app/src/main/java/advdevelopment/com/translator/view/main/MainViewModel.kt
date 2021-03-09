@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import advdevelopment.com.core.viewmodel.BaseViewModel
 import advdevelopment.com.model.data.AppState
 import advdevelopment.com.translator.utils.parseOnlineSearchResults
-import advdevelopment.com.translator.view.main.MainInteractor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

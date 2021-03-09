@@ -1,4 +1,4 @@
-package advdevelopment.com.repository.room
+package advdevelopment.com.model.room
 
 import androidx.room.*
 
