@@ -1,4 +1,4 @@
-package advdevelopment.com.model.room
+package advdevelopment.com.repository.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
